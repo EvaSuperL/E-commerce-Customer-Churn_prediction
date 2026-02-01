@@ -1,0 +1,38 @@
+# Project configuration
+data:
+  file_path: "data/online_retail_II.csv"
+  encoding: "unicode_escape"
+  
+churn:
+  definition_days: 90
+  analysis_date: "2011-12-09"
+  
+features:
+  # RFM features
+  recency: true
+  frequency: true
+  monetary: true
+  
+  # Behavioral features
+  avg_basket_size: true
+  product_variety: true
+  purchase_regularity: true
+  customer_tenure: true
+  
+  # Temporal features
+  favorite_day: true
+  favorite_hour: true
+  
+  # Country encoding
+  country_encoding: "onehot"  # onehot, label, or none
+  
+model:
+  test_size: 0.2
+  validation_size: 0.2
+  random_state: 42
+  cv_folds: 5
+  
+api:
+  host: "0.0.0.0"
+  port: 8000
+  debug: false
