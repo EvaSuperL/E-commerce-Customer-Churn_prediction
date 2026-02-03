@@ -1,0 +1,32 @@
+{
+  "model_name": "Random Forest",
+  "model_type": "RandomForestClassifier",
+  "training_date": "2026-02-03T09:18:30.649601",
+  "features_used": [
+    "recency",
+    "frequency",
+    "monetary",
+    "avg_basket_size",
+    "product_variety",
+    "customer_tenure",
+    "purchase_regularity",
+    "favorite_day",
+    "favorite_hour",
+    "avg_days_between_orders",
+    "has_return_history",
+    "country"
+  ],
+  "target": "churn",
+  "performance": {
+    "test_accuracy": 0.9988479262672811,
+    "test_precision": 1.0,
+    "test_recall": 0.996551724137931,
+    "test_f1": 0.998272884283247,
+    "test_roc_auc": 1.0
+  },
+  "dataset_info": {
+    "n_customers": 4338,
+    "churn_rate": 0.33402489626556015,
+    "analysis_date": "2011-12-10T12:50:00"
+  }
+}
